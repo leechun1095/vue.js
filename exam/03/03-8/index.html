@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Vue Sample</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- p.65 props 속성을 사용한 데이터 전달 예제 -->
+      <!-- 팁 : 오른쪽에서 왼쪽으로 속성을 읽으면 더 수월합니다. -->
+      <child-component v-bind:propsdata="message"></child-component>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
+    <script>
+    // 하위 컴포넌트 정의
+    Vue.component('child-component', {
+      props: ['propsdata'],
+      template: '<p>{{ propsdata }}</p>'
+    });
+
+    // 인스턴스
+    new Vue({
+      el: '#app',
+      data: {
+        message: 'Hellow vue! passed from Parent Component'
+      }
+    });
+    </script>
+  </body>
+</html>
