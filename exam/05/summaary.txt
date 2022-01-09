@@ -62,4 +62,3 @@
 	  2) 프로젝트 생성: vue init webpack-simple
 	  3) 관련 라이브러리 설치: npm install
 	  4) 프로젝트 구동: npm run dev
-[출처] [4일차] Do it! Vue.js 입문 / 97~126p / 05 화면을 개발하기 위한 기본 지식과 팁 - 템플릿&프로젝트 구성 (Do it! 스터디룸) | 작성자 애독자
